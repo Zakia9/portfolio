@@ -1,0 +1,37 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body {
+  @apply box-border bg-purple-700 text-gray-50;
+}
+/* Chanong font */
+html {
+  @apply font-Poppins scroll-smooth;
+}
+.aboutImg::after {
+  @apply content-[''] w-full left-0 top-0 rounded-xl rotate-12 h-full absolute bg-gray-600 -z-10;
+}
+.btn-primary {
+  @apply bg-purple-800 font-semibold text-white md:mx-0 mx-auto rounded-full py-3 px-6 flex items-center gap-2;
+}
+
+
+
+.swiper-pagination-bullet {
+  @apply bg-white;
+}
+
+input,
+textarea {
+  @apply  outline-none bg-purple-700 text-white p-3 rounded-lg ;
+}
+
+::selection {
+  @apply bg-black;
+}c
+::placeholder {
+  @apply text-lg text-white;
+}
